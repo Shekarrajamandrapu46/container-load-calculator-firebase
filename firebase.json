@@ -1,0 +1,49 @@
+{
+  "hosting": {
+    "site": "meher-container-loader",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "firestore.rules",
+      "storage.rules",
+      "package.json",
+      "package-lock.json",
+      "functions/**",
+      "node_modules/**",
+      "tests/e2e/**",
+      "docs/**",
+      "playwright.config.cjs",
+      "playwright-report/**",
+      "test-results/**",
+      ".git/**",
+      ".firebase/**"
+    ],
+    "headers": [
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "functions": {
+    "source": "functions"
+  }
+}

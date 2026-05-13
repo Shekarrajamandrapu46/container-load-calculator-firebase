@@ -1,0 +1,23 @@
+node_modules/
+.firebase/
+*.log
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+functions/node_modules/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Secrets / local env (never commit)
+.env
+.env.*
+!.env.example
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.swp
+.idea/
+.vscode/

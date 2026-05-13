@@ -1,0 +1,21 @@
+{
+  "name": "meher-container-load-calculator",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node tests/unit.mjs",
+    "test:e2e": "playwright test",
+    "test:smoke": "playwright test tests/e2e/smoke.spec.cjs",
+    "test:planner": "playwright test tests/e2e/planner-full.spec.cjs",
+    "playwright:install": "playwright install chromium",
+    "deploy": "firebase deploy --only hosting,firestore:rules",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "deploy:rules": "firebase deploy --only firestore:rules",
+    "deploy:storage": "firebase deploy --only storage"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "firebase-tools": "^14.0.0"
+  }
+}
