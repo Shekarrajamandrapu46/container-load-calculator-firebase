@@ -6,7 +6,7 @@ This folder is the hosted/team version of the calculator.
 
 - Firebase Hosting for the webpage.
 - Firestore for browser-side team PIN records.
-- Firestore for shared regional masters, vendor directory, settings, and saved plans.
+- Firestore for shared regional masters, vendor directory, and settings.
 - Logo/settings are stored in Firestore for the Spark/free version. Firebase Storage can be enabled later if needed.
 
 ## Spark / Free Mode Note
@@ -36,7 +36,7 @@ When no active admin PIN exists yet, the app accepts `8421` as the first admin P
 ## Recommended Roles
 
 - `admin`: manage part masters, vendor directory, settings, and team PINs.
-- `planner`: calculate, save plans, and export files.
+- `planner`: calculate and export files.
 - `viewer`: open shared data without editing/exporting.
 
 ## Important
